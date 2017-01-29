@@ -30,6 +30,29 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
+      "Microsoft.Graph.Core/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.1, 10.0.0)"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        }
+      },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.NETCore/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -238,6 +261,19 @@
           "System.Xml.XmlSerializer": "4.0.10"
         }
       },
+      "Microsoft.OneDriveSDK/2.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Graph.Core": "1.2.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        }
+      },
       "Microsoft.VisualBasic/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -276,6 +312,36 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -1907,6 +1973,29 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
+      "Microsoft.Graph.Core/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.1, 10.0.0)"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        }
+      },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.NETCore/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -2064,6 +2153,19 @@
           "System.Xml.XmlSerializer": "4.0.10"
         }
       },
+      "Microsoft.OneDriveSDK/2.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Graph.Core": "1.2.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        }
+      },
       "Microsoft.VisualBasic/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -2102,6 +2204,15 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -2154,6 +2265,27 @@
           "runtimes/win8-arm/native/mscordbi.dll": {},
           "runtimes/win8-arm/native/mscorrc.debug.dll": {},
           "runtimes/win8-arm/native/mscorrc.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -3650,6 +3782,29 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
+      "Microsoft.Graph.Core/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.1, 10.0.0)"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        }
+      },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.NETCore/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -3805,6 +3960,19 @@
           "System.Xml.XmlSerializer": "4.0.10"
         }
       },
+      "Microsoft.OneDriveSDK/2.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Graph.Core": "1.2.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        }
+      },
       "Microsoft.VisualBasic/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -3845,6 +4013,15 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -3875,6 +4052,27 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -5350,6 +5548,29 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
+      "Microsoft.Graph.Core/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.1, 10.0.0)"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        }
+      },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.NETCore/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -5513,6 +5734,19 @@
           "runtimes/win10-x64/native/_._": {}
         }
       },
+      "Microsoft.OneDriveSDK/2.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Graph.Core": "1.2.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        }
+      },
       "Microsoft.VisualBasic/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -5551,6 +5785,15 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -5606,6 +5849,27 @@
           "runtimes/win7-x64/native/mscordbi.dll": {},
           "runtimes/win7-x64/native/mscorrc.debug.dll": {},
           "runtimes/win7-x64/native/mscorrc.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -7102,6 +7366,29 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
+      "Microsoft.Graph.Core/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.1, 10.0.0)"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        }
+      },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.NETCore/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -7257,6 +7544,19 @@
           "System.Xml.XmlSerializer": "4.0.10"
         }
       },
+      "Microsoft.OneDriveSDK/2.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Graph.Core": "1.2.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        }
+      },
       "Microsoft.VisualBasic/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -7297,6 +7597,15 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -7327,6 +7636,27 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -8802,6 +9132,29 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
+      "Microsoft.Graph.Core/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.1, 10.0.0)"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        }
+      },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.NETCore/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -8965,6 +9318,19 @@
           "runtimes/win10-x86/native/_._": {}
         }
       },
+      "Microsoft.OneDriveSDK/2.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Graph.Core": "1.2.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        }
+      },
       "Microsoft.VisualBasic/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -9003,6 +9369,15 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -9058,6 +9433,27 @@
           "runtimes/win7-x86/native/mscordbi.dll": {},
           "runtimes/win7-x86/native/mscorrc.debug.dll": {},
           "runtimes/win7-x86/native/mscorrc.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -10554,6 +10950,29 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
+      "Microsoft.Graph.Core/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.1, 10.0.0)"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll": {}
+        }
+      },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.NETCore/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -10709,6 +11128,19 @@
           "System.Xml.XmlSerializer": "4.0.10"
         }
       },
+      "Microsoft.OneDriveSDK/2.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Graph.Core": "1.2.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll": {}
+        }
+      },
       "Microsoft.VisualBasic/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -10749,6 +11181,15 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -10779,6 +11220,27 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -12267,6 +12729,49 @@
         "ref/xamarinmac20/_._"
       ]
     },
+    "Microsoft.Graph.Core/1.2.1": {
+      "sha512": "ZVfBio42uIrKT7P2AmUDb5FQiY27hayaeJ1aSj3eocRojkqs15dcjk6+iuVb2qxgK2Re3raJHE31BZUK/+mB/A==",
+      "type": "package",
+      "files": [
+        "Microsoft.Graph.Core.1.2.1.nupkg.sha512",
+        "Microsoft.Graph.Core.nuspec",
+        "lib/MonoAndroid10/Microsoft.Graph.Core.dll",
+        "lib/MonoTouch10/Microsoft.Graph.Core.dll",
+        "lib/Xamarin.Mac20/Microsoft.Graph.Core.dll",
+        "lib/Xamarin.iOS10/Microsoft.Graph.Core.dll",
+        "lib/portable45-net45+win8+wpa81/Microsoft.Graph.Core.dll"
+      ]
+    },
+    "Microsoft.Identity.Client/1.0.304142221-alpha": {
+      "sha512": "T4kd4b5IFxWDOaGdYi5ipnj6kSAV3Ym4dj6lxVmWQ6lMoAdOBgiMT4K+LAG/G+14GFK2pbO75XgwJbgT3ol6eg==",
+      "type": "package",
+      "files": [
+        "Microsoft.Identity.Client.1.0.304142221-alpha.nupkg.sha512",
+        "Microsoft.Identity.Client.nuspec",
+        "lib/MonoAndroid10/Microsoft.Identity.Client.Platform.dll",
+        "lib/MonoAndroid10/Microsoft.Identity.Client.Platform.xml",
+        "lib/MonoAndroid10/Microsoft.Identity.Client.dll",
+        "lib/MonoAndroid10/Microsoft.Identity.Client.xml",
+        "lib/Xamarin.iOS10/Microsoft.Identity.Client.Platform.dll",
+        "lib/Xamarin.iOS10/Microsoft.Identity.Client.Platform.xml",
+        "lib/Xamarin.iOS10/Microsoft.Identity.Client.dll",
+        "lib/Xamarin.iOS10/Microsoft.Identity.Client.xml",
+        "lib/dnxcore50/Microsoft.Identity.Client.Platform.dll",
+        "lib/dnxcore50/Microsoft.Identity.Client.Platform.xml",
+        "lib/dnxcore50/Microsoft.Identity.Client.dll",
+        "lib/dnxcore50/Microsoft.Identity.Client.xml",
+        "lib/net45/Microsoft.Identity.Client.Platform.dll",
+        "lib/net45/Microsoft.Identity.Client.Platform.xml",
+        "lib/net45/Microsoft.Identity.Client.dll",
+        "lib/net45/Microsoft.Identity.Client.xml",
+        "lib/netcore45/Microsoft.Identity.Client.Platform.dll",
+        "lib/netcore45/Microsoft.Identity.Client.Platform.xml",
+        "lib/netcore45/Microsoft.Identity.Client.dll",
+        "lib/netcore45/Microsoft.Identity.Client.xml",
+        "lib/portable-net45+win/Microsoft.Identity.Client.dll",
+        "lib/portable-net45+win/Microsoft.Identity.Client.xml"
+      ]
+    },
     "Microsoft.NETCore/5.0.0": {
       "sha512": "QQMp0yYQbIdfkKhdEE6Umh2Xonau7tasG36Trw/YlHoWgYQLp7T9L+ZD8EPvdj5ubRhtOuKEKwM7HMpkagB9ZA==",
       "type": "package",
@@ -12753,6 +13258,15 @@
         "runtimes/win81-x86/native/api-ms-win-security-cpwl-l1-1-0.dll"
       ]
     },
+    "Microsoft.OneDriveSDK/2.0.6": {
+      "sha512": "3FBkCa5cVuUe/YP23mSwbzNsenzRJAeOwIk45nXfFfaTz6mYtOWNj490xKRttoCn0IT0UZy1a3YjWRxBkN3l0g==",
+      "type": "package",
+      "files": [
+        "Microsoft.OneDriveSDK.2.0.6.nupkg.sha512",
+        "Microsoft.OneDriveSDK.nuspec",
+        "lib/portable-net45+netcore45+wpa81+win8/Microsoft.OneDrive.Sdk.dll"
+      ]
+    },
     "Microsoft.VisualBasic/10.0.0": {
       "sha512": "5BEm2/HAVd97whRlCChU7rmSh/9cwGlZ/NTNe3Jl07zuPWfKQq5TUvVNUmdvmEe8QRecJLZ4/e7WF1i1O8V42g==",
       "type": "package",
@@ -12810,6 +13324,29 @@
         "ref/net46/Microsoft.Win32.Primitives.dll",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
+      ]
+    },
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
+      "type": "package",
+      "files": [
+        "Newtonsoft.Json.9.0.1.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "tools/install.ps1"
       ]
     },
     "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -12893,6 +13430,33 @@
         "runtimes/win8-arm/native/mscordbi.dll",
         "runtimes/win8-arm/native/mscorrc.debug.dll",
         "runtimes/win8-arm/native/mscorrc.dll"
+      ]
+    },
+    "SQLite.Net-PCL/3.1.1": {
+      "sha512": "eIaIk+k4MwvBeKyzj1kgIegWXYZlaDAHNzsaYP7wNDgSqAdaza8FgCRun7mIZScJD/RIuKxN/b1V+bkC+/WIeA==",
+      "type": "package",
+      "files": [
+        "SQLite.Net-PCL.3.1.1.nupkg.sha512",
+        "SQLite.Net-PCL.nuspec",
+        "lib/MonoAndroid/SQLite.Net.Platform.XamarinAndroid.dll",
+        "lib/Windows8/SQLite.Net.Platform.WinRT.dll",
+        "lib/Xamarin.iOS10/SQLite.Net.Platform.XamarinIOS.Unified.dll",
+        "lib/monotouch/SQLite.Net.Platform.XamarinIOS.dll",
+        "lib/net4/SQLite.Net.Platform.Win32.dll",
+        "lib/net40/SQLite.Net.Platform.Generic.dll",
+        "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll",
+        "lib/portable-win81+wpa81/SQLite.Net.Platform.WinRT.dll",
+        "lib/windowsphone8/ARM/SQLite.Net.Platform.WindowsPhone8.dll",
+        "lib/windowsphone8/x86/SQLite.Net.Platform.WindowsPhone8.dll"
+      ]
+    },
+    "SQLite.Net.Core-PCL/3.1.1": {
+      "sha512": "/0VdXnyj2srEh5rM1RW/snXJrVGRsxGB3xjW4EkhZIig9N/8EocZZrEr0vwRJU8a9Lz4BrweoLyKwp2evmSIzg==",
+      "type": "package",
+      "files": [
+        "SQLite.Net.Core-PCL.3.1.1.nupkg.sha512",
+        "SQLite.Net.Core-PCL.nuspec",
+        "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll"
       ]
     },
     "System.AppContext/4.0.0": {
@@ -15497,7 +16061,10 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0"
+      "Microsoft.Identity.Client >= 1.0.304142221-alpha",
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
+      "Microsoft.OneDriveSDK >= 2.0.6",
+      "SQLite.Net-PCL >= 3.1.1"
     ],
     "UAP,Version=v10.0": []
   }

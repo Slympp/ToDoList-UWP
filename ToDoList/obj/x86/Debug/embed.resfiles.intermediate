@@ -1,2 +1,4 @@
 App.xbf
-MainPage.xbf
+CreatePage.xbf
+ListPage.xbf
+UpdatePage.xbf

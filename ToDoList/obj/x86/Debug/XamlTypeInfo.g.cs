@@ -132,15 +132,23 @@ namespace ToDoList.ToDoList_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "ToDoList.MainPage";
+            _typeNameTable = new string[7];
+            _typeNameTable[0] = "ToDoList.UpdatePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "ToDoList.CreatePage";
+            _typeNameTable[4] = "MyConverter.DueTimeConverter";
+            _typeNameTable[5] = "Object";
+            _typeNameTable[6] = "ToDoList.ListPage";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::ToDoList.MainPage);
+            _typeTable = new global::System.Type[7];
+            _typeTable[0] = typeof(global::ToDoList.UpdatePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::ToDoList.CreatePage);
+            _typeTable[4] = typeof(global::MyConverter.DueTimeConverter);
+            _typeTable[5] = typeof(global::System.Object);
+            _typeTable[6] = typeof(global::ToDoList.ListPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +183,10 @@ namespace ToDoList.ToDoList_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::ToDoList.MainPage(); }
+        private object Activate_0_UpdatePage() { return new global::ToDoList.UpdatePage(); }
+        private object Activate_3_CreatePage() { return new global::ToDoList.CreatePage(); }
+        private object Activate_4_DueTimeConverter() { return new global::MyConverter.DueTimeConverter(); }
+        private object Activate_6_ListPage() { return new global::ToDoList.ListPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,9 +198,9 @@ namespace ToDoList.ToDoList_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  ToDoList.MainPage
+            case 0:   //  ToDoList.UpdatePage
                 userType = new global::ToDoList.ToDoList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_UpdatePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -200,6 +211,31 @@ namespace ToDoList.ToDoList_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::ToDoList.ToDoList_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  ToDoList.CreatePage
+                userType = new global::ToDoList.ToDoList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_CreatePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  MyConverter.DueTimeConverter
+                userType = new global::ToDoList.ToDoList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_4_DueTimeConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  Object
+                xamlType = new global::ToDoList.ToDoList_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  ToDoList.ListPage
+                userType = new global::ToDoList.ToDoList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_ListPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

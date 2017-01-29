@@ -10,23 +10,32 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>34bb6ceb-d29a-4f59-bb74-f89603e9f345</PackageIdentityName>
     <PackageIdentityPublisher>CN=Slymp</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Work\ToDoList_UWP\ToDoList\ToDoList\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Work\ToDoList-UWP\ToDoList\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Work\ToDoList-UWP\ToDoList\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\bin\x86\Debug\ToDoList.exe">
+    <AppxPackagedFile Include="D:\Work\ToDoList-UWP\ToDoList\bin\x86\Debug\ToDoList.exe">
       <PackagePath>entrypoint\ToDoList.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\Microsoft.Graph.Core\1.2.1\lib\portable45-net45+win8+wpa81\Microsoft.Graph.Core.dll">
+      <PackagePath>Microsoft.Graph.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\Microsoft.Identity.Client\1.0.304142221-alpha\lib\netcore45\Microsoft.Identity.Client.Platform.dll">
+      <PackagePath>Microsoft.Identity.Client.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\Microsoft.Identity.Client\1.0.304142221-alpha\lib\netcore45\Microsoft.Identity.Client.dll">
+      <PackagePath>Microsoft.Identity.Client.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
@@ -64,14 +73,26 @@
     <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.dll">
       <PackagePath>System.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\Microsoft.OneDriveSDK\2.0.6\lib\portable-net45+netcore45+wpa81+win8\Microsoft.OneDrive.Sdk.dll">
+      <PackagePath>Microsoft.OneDrive.Sdk.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\Microsoft.VisualBasic\10.0.0\lib\netcore50\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\Newtonsoft.Json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\runtime.any.System.Private.DataContractSerialization\4.1.0\lib\netcore50\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\SQLite.Net-PCL\3.1.1\lib\Windows8\SQLite.Net.Platform.WinRT.dll">
+      <PackagePath>SQLite.Net.Platform.WinRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\SQLite.Net.Core-PCL\3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll">
+      <PackagePath>SQLite.Net.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\System.AppContext\4.0.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -334,46 +355,49 @@
     <AppxPackagedFile Include="C:\Users\Slymp\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UWP.2015\3.16.2\Redist\Debug\x86\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\ToDoList-UWP\ToDoList\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Work\ToDoList-UWP\ToDoList\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Work\ToDoList-UWP\ToDoList\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Work\ToDoList-UWP\ToDoList\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Work\ToDoList-UWP\ToDoList\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Work\ToDoList-UWP\ToDoList\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Work\ToDoList-UWP\ToDoList\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Work\ToDoList-UWP\ToDoList\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\bin\x86\Debug\ToDoList.xr.xml">
+    <AppxPackagedFile Include="D:\Work\ToDoList-UWP\ToDoList\bin\x86\Debug\ToDoList.xr.xml">
       <PackagePath>ToDoList.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Work\ToDoList-UWP\ToDoList\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Work\ToDoList_UWP\ToDoList\ToDoList\bin\x86\Debug\Core\ToDoList.exe">
+    <AppxPackagedFile Include="D:\Work\ToDoList-UWP\ToDoList\bin\x86\Debug\Core\ToDoList.exe">
       <PackagePath>ToDoList.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

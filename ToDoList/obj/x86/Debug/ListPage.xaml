@@ -1,0 +1,101 @@
+﻿<Page
+    x:Class="ToDoList.ListPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ToDoList"
+    xmlns:conv="using:MyConverter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='3' x:Name="createButton" Grid.Column="0"
+                Content="New task"                    Height="42" Width="auto"
+                HorizontalAlignment="Center"
+                FontSize="18"></Button>
+            <Button x:ConnectionId='4' x:Name="orderButton" Grid.Column="1"
+                Content=""                          Height="42" Width="auto"
+                HorizontalAlignment="Center"
+                FontSize="18"></Button>
+        </Grid>
+
+        <ListView x:ConnectionId='1' x:Name="taskList" Grid.Row="0" ItemsSource ="{Binding listOfTasks}"                       
+        Margin="0" VerticalAlignment="Top" HorizontalAlignment="Stretch"
+              SelectionMode="None" IsItemClickEnabled="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid x:Name="itemGrid">
+
+                        <Grid.Resources>
+                            <conv:DueTimeConverter x:Name="FormatConverter"/>
+                        </Grid.Resources>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <TextBlock x:Name="itemTitle" Text="{Binding Title}"
+                           Margin="20,10,20,8"
+                           FontSize="24"
+                           FontWeight="SemiBold"
+                           Foreground="Black"/>
+
+                        <TextBlock x:Name="itemDesc" Text="{Binding Desc}" 
+                           Grid.Row="1"
+                           Margin="20,0,20,8"
+                           FontSize="16"
+                           Foreground="DarkGray"/>
+
+                        <TextBlock x:Name="itemDueTime" Text="{Binding Duetime, Converter={StaticResource FormatConverter}}"
+                           Grid.Column="2"
+                           Margin="0,10,0,0"
+                           FontSize="12"
+                           Foreground="DarkGray"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"/>
+
+                        <CheckBox x:ConnectionId='2' x:Name="checkBox"
+                            IsChecked="{Binding isDone, Mode=TwoWay}"
+                            Grid.Row="1"
+                            Grid.Column="2"
+                            Margin="0,0,0,0"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                                           
+                            Padding="0" MinWidth="0">
+                        </CheckBox>
+
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+
+    </Grid>
+</Page>
+
+
+

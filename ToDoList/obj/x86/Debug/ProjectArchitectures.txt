@@ -1,1 +1,1 @@
-D:\Work\ToDoList_UWP\ToDoList\ToDoList\ToDoList.csproj;x86
+D:\Work\ToDoList-UWP\ToDoList\ToDoList.csproj;x86
